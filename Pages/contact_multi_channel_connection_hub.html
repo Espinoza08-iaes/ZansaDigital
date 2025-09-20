@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="contact.meta.title">Contacto - Hub de Conexión Multi-Canal | Zansa Digital</title>
+    <meta name="description" content="Múltiples canales de contacto para conectar con Zansa Digital. Consultoría gratuita, formularios de proyecto, portal de clientes y comunicación directa disponible 24/7." />
+    <link rel="stylesheet" href="../Css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/i18next@23.7.11/i18next.min.js"></script>
+    <script src="../public/js/i18n.js"></script>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fzansadigi5657back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-card sticky top-0 z-50 backdrop-blur-sm bg-opacity-95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage_creative_technology_agency.html" class="flex items-center">
+                        <span class="font-headline font-bold text-xl text-primary">Zansa Digital</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage_creative_technology_agency.html" data-i18n="nav.home" class="text-text-secondary hover:text-primary font-headline font-medium px-3 py-2 rounded-md text-sm transition-colors duration-300">Inicio</a>
+                        <a href="services_comprehensive_digital_solutions.html" data-i18n="nav.services" class="text-text-secondary hover:text-primary font-headline font-medium px-3 py-2 rounded-md text-sm transition-colors duration-300">Servicios</a>
+                        <a href="portfolio_success_stories_case_studies.html" data-i18n="nav.portfolio" class="text-text-secondary hover:text-primary font-headline font-medium px-3 py-2 rounded-md text-sm transition-colors duration-300">Portafolio</a>
+                        <a href="about_team_innovation_lab.html" data-i18n="nav.team" class="text-text-secondary hover:text-primary font-headline font-medium px-3 py-2 rounded-md text-sm transition-colors duration-300">Equipo</a>
+                        <a href="contact_multi_channel_connection_hub.html" data-i18n="nav.contact" class="text-primary font-headline font-semibold px-3 py-2 rounded-md text-sm border-b-2 border-accent">Contacto</a>
+                    </div>
+                </div>
+
+                <!-- Language Toggle & CTA -->
+                <div class="flex items-center space-x-4">
+                    <div class="hidden sm:flex items-center bg-primary-50 rounded-lg p-1">
+                        <button data-lang="es" onclick="changeLang('es')" class="px-3 py-1 text-sm font-medium bg-primary text-white rounded-md transition-all duration-300">ES</button>
+                        <button data-lang="en" onclick="changeLang('en')" class="px-3 py-1 text-sm font-medium text-primary hover:bg-primary-100 rounded-md transition-all duration-300">EN</button>
+                    </div>
+                    <a href="free_consultation_assessment_booking.html" class="btn-primary text-sm" data-i18n="nav.cta_free">Asesoría Gratuita</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary focus:outline-none focus:text-primary" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-surface border-t border-border">
+                <a href="homepage_creative_technology_agency.html" data-i18n="nav.home" class="text-text-secondary hover:text-primary font-headline font-medium block px-3 py-2 rounded-md text-base">Inicio</a>
+                <a href="services_comprehensive_digital_solutions.html" data-i18n="nav.services" class="text-text-secondary hover:text-primary font-headline font-medium block px-3 py-2 rounded-md text-base">Servicios</a>
+                <a href="portfolio_success_stories_case_studies.html" data-i18n="nav.portfolio" class="text-text-secondary hover:text-primary font-headline font-medium block px-3 py-2 rounded-md text-base">Portafolio</a>
+                <a href="about_team_innovation_lab.html" data-i18n="nav.team" class="text-text-secondary hover:text-primary font-headline font-medium block px-3 py-2 rounded-md text-base">Equipo</a>
+                <a href="contact_multi_channel_connection_hub.html" data-i18n="nav.contact" class="text-primary font-headline font-semibold block px-3 py-2 rounded-md text-base">Contacto</a>
+                <div class="flex items-center justify-center mt-4 mb-2">
+                    <div class="flex items-center bg-primary-50 rounded-lg p-1">
+                        <button data-lang="es" onclick="changeLang('es')" class="px-3 py-1 text-sm font-medium bg-primary text-white rounded-md">ES</button>
+                        <button data-lang="en" onclick="changeLang('en')" class="px-3 py-1 text-sm font-medium text-primary hover:bg-primary-100 rounded-md">EN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-700 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 text-accent-200 font-mono text-xs transform rotate-12">
+                &lt;contact type="multi-channel"&gt;
+            </div>
+            <div class="absolute top-32 right-20 text-accent-200 font-mono text-xs transform -rotate-6">
+                function connect() { return collaboration + results; }
+            </div>
+            <div class="absolute bottom-40 left-20 text-accent-200 font-mono text-xs transform rotate-6">
+                .communication { display: flex; align-items: success; }
+            </div>
+            <div class="absolute bottom-20 right-10 text-accent-200 font-mono text-xs transform -rotate-12">
+                &lt;/partnership&gt;
+            </div>
+        </div>
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-headline font-bold text-white mb-6 leading-tight" data-i18n-html="contact.hero.title_html">Conectemos y <span class="text-accent block">Transformemos</span><span class="text-white">tu Negocio</span></h1>
+            <p class="text-xl md:text-2xl text-primary-100 mb-8 max-w-3xl mx-auto font-body" data-i18n="contact.hero.subtitle">
+                Múltiples canales de comunicación para que elijas la forma que mejor se adapte a tus necesidades y preferencias
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#contact-form" class="btn-primary text-lg px-8 py-4 shadow-cta hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300" data-i18n="contact.hero.cta_primary">Iniciar Conversación</a>
+                <a href="#quick-contact" class="btn-outline text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary" data-i18n="contact.hero.cta_secondary">Contacto Rápido</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods Overview -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-headline font-bold text-primary mb-4" data-i18n="contact.channels.title">Elige tu Canal Preferido</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto font-body" data-i18n="contact.channels.desc">Ofrecemos múltiples formas de conectar, desde consultas estratégicas hasta comunicación directa</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Strategic Consultation -->
+                <div class="card-elevated text-center hover:scale-105 transition-all duration-500">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-headline font-bold text-primary mb-4" data-i18n="contact.channels.consult.title">Consultoría Estratégica</h3>
+                    <p class="text-text-secondary font-body mb-6" data-i18n="contact.channels.consult.desc">Sesión personalizada para analizar tus necesidades y diseñar la estrategia digital perfecta</p>
+                    <ul class="text-left space-y-2 mb-6">
+                        <li class="flex items-center text-text-primary font-body" data-i18n="contact.channels.consult.b1">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            Análisis de situación actual
+                        </li>
+                        <li class="flex items-center text-text-primary font-body" data-i18n="contact.channels.consult.b2">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            Propuesta de soluciones
+                        </li>
+                        <li class="flex items-center text-text-primary font-body" data-i18n="contact.channels.consult.b3">
+                            <div class="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                            Roadmap de implementación
+                        </li>
+                    </ul>
+                    <a href="free_consultation_assessment_booking.html" class="btn-primary w-full" data-i18n="cta.btn_primary">Agendar Consultoría Gratuita</a>
+                </div>
+
+                <!-- Project Inquiry -->
+                <div class="card-elevated text-center hover:scale-105 transition-all duration-500">
+                    <div class="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-headline font-bold text-primary mb-4" data-i18n="contact.channels.project.title">Solicitud de Proyecto</h3>
+                    <p class="text-text-secondary font-body mb-6" data-i18n="contact.channels.project.desc">Formulario detallado para proyectos específicos con cotización personalizada</p>
+                    <ul class="text-left space-y-2 mb-6">
+                        <li class="flex items-center text-text-primary font-body" data-i18n="contact.channels.project.b1">
+                            <div class="w-2 h-2 bg-secondary rounded-full mr-3"></div>
+                            Especificaciones técnicas
+                        </li>
+                        <li class="flex items-center text-text-primary font-body" data-i18n="contact.channels.project.b2">
+                            <div class="w-2 h-2 bg-secondary rounded-full mr-3"></div>
+                            Presupuesto y timeline
+                        </li>
+                        <li class="flex items-center text-text-primary font-body" data-i18n="contact.channels.project.b3">
+                            <div class="w-2 h-2 bg-secondary rounded-full mr-3"></div>
+                            Propuesta formal
+                        </li>
+                    </ul>
+                    <a href="#project-form" class="btn-secondary w-full" data-i18n="contact.channels.project.cta">Solicitar Cotización</a>
+                </div>
+
+                <!-- Direct Communication -->
+                <div class="card-elevated text-center hover:scale-105 transition-all duration-500">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-headline font-bold text-primary mb-4" data-i18n="contact.channels.direct.title">Comunicación Directa</h3>
+                    <p class="text-text-secondary font-body mb-6" data-i18n="contact.channels.direct.desc">Contacto inmediato para consultas rápidas y comunicación en tiempo real</p>
+                    <ul class="text-left space-y-2 mb-6">
+                        <li class="flex items-center text-text-primary font-body" data-i18n="contact.channels.direct.b1">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            Respuesta en 2 horas
+                        </li>
+                        <li class="flex items-center text-text-primary font-body" data-i18n="contact.channels.direct.b2">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            WhatsApp Business
+                        </li>
+                        <li class="flex items-center text-text-primary font-body" data-i18n="contact.channels.direct.b3">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            Videollamada disponible
+                        </li>
+                    </ul>
+                    <a href="#quick-contact" class="btn-outline w-full" data-i18n="cta.btn_secondary">Contactar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Form -->
+    <section id="contact-form" class="py-20 bg-primary-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-headline font-bold text-primary mb-4" data-i18n="contact.form.title">Cuéntanos sobre tu Proyecto</h2>
+                <p class="text-xl text-text-secondary font-body" data-i18n="contact.form.subtitle">Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas</p>
+            </div>
+
+            <div class="card-elevated">
+                <form class="space-y-6" id="main-contact-form">
+                    <!-- Contact Information -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-headline font-semibold text-primary mb-2" data-i18n="contact.form.label.name">Nombre Completo *</label>
+                            <input type="text" id="name" name="name" required class="input-field" placeholder="Tu nombre completo" data-i18n-placeholder="contact.form.ph.name" />
+                        </div>
+                        <div>
+                            <label for="company" class="block text-sm font-headline font-semibold text-primary mb-2" data-i18n="contact.form.label.company">Empresa</label>
+                            <input type="text" id="company" name="company" class="input-field" placeholder="Nombre de tu empresa" data-i18n-placeholder="contact.form.ph.company" />
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="email" class="block text-sm font-headline font-semibold text-primary mb-2" data-i18n="contact.form.label.email">Email Corporativo *</label>
+                            <input type="email" id="email" name="email" required class="input-field" placeholder="tu@empresa.com" data-i18n-placeholder="contact.form.ph.email" />
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-headline font-semibold text-primary mb-2" data-i18n="contact.form.label.phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" class="input-field" placeholder="Numero telefonico" data-i18n-placeholder="contact.form.ph.phone" />
+                        </div>
+                    </div>
+
+                    <!-- Project Details -->
+                    <div>
+                        <label for="project-type" class="block text-sm font-headline font-semibold text-primary mb-2" data-i18n="contact.form.label.project_type">Tipo de Proyecto *</label>
+                        <select id="project-type" name="project-type" required class="input-field">
+                            <option value data-i18n="contact.form.project_type.placeholder">Selecciona el tipo de proyecto</option>
+                            <option value="marketing-digital" data-i18n="contact.form.project_type.options.marketing">Marketing Digital Integral</option>
+                            <option value="desarrollo-web" data-i18n="contact.form.project_type.options.dev">Desarrollo Web & Aplicaciones</option>
+                            <option value="ecommerce" data-i18n="contact.form.project_type.options.ecommerce">E-commerce & Tienda Online</option>
+                            <option value="seo-sem" data-i18n="contact.form.project_type.options.seo_sem">SEO & Marketing de Búsqueda</option>
+                            <option value="branding" data-i18n="contact.form.project_type.options.branding">Branding & Identidad Digital</option>
+                            <option value="consultoria" data-i18n="contact.form.project_type.options.consulting">Consultoría Digital</option>
+                            <option value="integracion" data-i18n="contact.form.project_type.options.integration">Integración de Sistemas</option>
+                            <option value="otro" data-i18n="contact.form.project_type.options.other">Otro (especificar en descripción)</option>
+                        </select>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="budget" class="block text-sm font-headline font-semibold text-primary mb-2" data-i18n="contact.form.label.budget">Presupuesto Estimado</label>
+                            <select id="budget" name="budget" class="input-field">
+                                <option value data-i18n="contact.form.budget.placeholder">Selecciona rango de presupuesto</option>
+                                <option value="5k-15k" data-i18n="contact.form.budget.opt1">$50 - $100</option>
+                                <option value="15k-30k" data-i18n="contact.form.budget.opt2">$100 - $300</option>
+                                <option value="30k-50k" data-i18n="contact.form.budget.opt3">$350 - $500</option>
+                                <option value="50k-100k" data-i18n="contact.form.budget.opt4">$500 - $1000</option>
+                                <option value="100k+" data-i18n="contact.form.budget.opt5">$1500+</option>
+                                <option value="por-definir" data-i18n="contact.form.budget.opt6">Por definir</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="timeline" class="block text-sm font-headline font-semibold text-primary mb-2" data-i18n="contact.form.label.timeline">Timeline Deseado</label>
+                            <select id="timeline" name="timeline" class="input-field">
+                                <option value data-i18n="contact.form.timeline.placeholder">Selecciona timeline</option>
+                                <option value="urgente" data-i18n="contact.form.timeline.urgent">Urgente (1-2 semanas)</option>
+                                <option value="1-mes" data-i18n="contact.form.timeline.1m">1 mes</option>
+                                <option value="2-3-meses" data-i18n="contact.form.timeline.2_3m">2-3 meses</option>
+                                <option value="3-6-meses" data-i18n="contact.form.timeline.3_6m">3-6 meses</option>
+                                <option value="6-meses+" data-i18n="contact.form.timeline.6m_plus">6+ meses</option>
+                                <option value="flexible" data-i18n="contact.form.timeline.flexible">Flexible</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="description" class="block text-sm font-headline font-semibold text-primary mb-2" data-i18n="contact.form.label.description">Descripción del Proyecto *</label>
+                        <textarea id="description" name="description" rows="5" required class="input-field" placeholder="Describe tu proyecto, objetivos, desafíos actuales y qué esperas lograr..." data-i18n-placeholder="contact.form.ph.description"></textarea>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div>
+                        <label for="current-situation" class="block text-sm font-headline font-semibold text-primary mb-2" data-i18n="contact.form.label.current_situation">Situación Actual</label>
+                        <textarea id="current-situation" name="current-situation" rows="3" class="input-field" placeholder="¿Qué herramientas/plataformas usas actualmente? ¿Qué no está funcionando?" data-i18n-placeholder="contact.form.ph.current_situation"></textarea>
+                    </div>
+
+                    <!-- Communication Preferences -->
+                    <div>
+                        <label class="block text-sm font-headline font-semibold text-primary mb-3" data-i18n="contact.form.label.comm_prefs">Preferencias de Comunicación</label>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="flex items-center">
+                                <input type="checkbox" id="email-updates" name="communication[]" value="email" class="w-4 h-4 text-accent border-border rounded focus:ring-accent-500" />
+                                <label for="email-updates" class="ml-2 text-text-primary font-body" data-i18n="contact.form.comm.email">Email</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="phone-updates" name="communication[]" value="phone" class="w-4 h-4 text-accent border-border rounded focus:ring-accent-500" />
+                                <label for="phone-updates" class="ml-2 text-text-primary font-body" data-i18n="contact.form.comm.phone">Teléfono</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="whatsapp-updates" name="communication[]" value="whatsapp" class="w-4 h-4 text-accent border-border rounded focus:ring-accent-500" />
+                                <label for="whatsapp-updates" class="ml-2 text-text-primary font-body" data-i18n="contact.form.comm.whatsapp">WhatsApp</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Privacy & Terms -->
+                    <div class="flex items-start">
+                        <input type="checkbox" id="privacy-terms" name="privacy-terms" required class="w-4 h-4 text-accent border-border rounded focus:ring-accent-500 mt-1" />
+                        <label for="privacy-terms" class="ml-2 text-sm text-text-secondary font-body" data-i18n-html="contact.form.privacy_html">Acepto la <a href="javascript:void(0)" class="text-accent hover:text-accent-700">Política de Privacidad</a> y los <a href="javascript:void(0)" class="text-accent hover:text-accent-700">Términos de Servicio</a>. Autorizo el tratamiento de mis datos para fines comerciales y de comunicación.</label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary text-lg px-12 py-4 shadow-cta hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300" data-i18n="contact.form.submit">Enviar Solicitud</button>
+                        <p class="text-sm text-text-secondary font-body mt-3" data-i18n="contact.form.note">Atenderemos tu requerimiento de inmediato, y en menos de 24 horas recibirás nuestra propuesta inicial.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Section -->
+    <section id="quick-contact" class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-headline font-bold text-primary mb-4" data-i18n="contact.quick.title">Contacto Directo</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto font-body" data-i18n="contact.quick.desc">Para consultas rápidas, emergencias o comunicación inmediata</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Phone Contact -->
+                <div class="card text-center hover:scale-105 transition-all duration-300">
+                    <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline font-semibold text-primary mb-2" data-i18n="contact.quick.phone.title">Teléfono</h3>
+                    <p class="text-text-secondary font-body text-sm mb-3" data-i18n="contact.quick.phone.hours">Lun-Vie 9:00-18:00 CET</p>
+                    <a href="tel:+50588504981" class="text-accent font-headline font-semibold hover:text-accent-700 transition-colors duration-300">
+                        +505 8850 4981
+                    </a>
+                </div>
+
+                <!-- WhatsApp -->
+                <div class="card text-center hover:scale-105 transition-all duration-300">
+                    <div class="w-12 h-12 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.106"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline font-semibold text-primary mb-2" data-i18n="contact.quick.whatsapp.title">WhatsApp</h3>
+                    <p class="text-text-secondary font-body text-sm mb-3" data-i18n="contact.quick.whatsapp.note">Respuesta inmediata</p>
+                    <a href="https://wa.me/50588504981" target="_blank" class="text-success font-headline font-semibold hover:text-success-700 transition-colors duration-300">
+                        <span data-i18n="contact.quick.whatsapp.cta">Enviar Mensaje</span>
+                    </a>
+                </div>
+
+                <!-- Email -->
+                <div class="card text-center hover:scale-105 transition-all duration-300">
+                    <div class="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline font-semibold text-primary mb-2" data-i18n="contact.quick.email.title">Email</h3>
+                    <p class="text-text-secondary font-body text-sm mb-3" data-i18n="contact.quick.email.note">Respuesta en 2-4 horas</p>
+                    <a href="mailto:hola@zansadigital.com" class="text-secondary font-headline font-semibold hover:text-secondary-700 transition-colors duration-300">
+                        isacespinozasaenz@gmail.com
+                    </a>
+                </div>
+
+                <!-- Emergency Contact -->
+                <div class="card text-center hover:scale-105 transition-all duration-300">
+                    <div class="w-12 h-12 bg-error-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-error" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.732-.833-2.464 0L4.35 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline font-semibold text-primary mb-2" data-i18n="contact.quick.emergency.title">Emergencias</h3>
+                    <p class="text-text-secondary font-body text-sm mb-3" data-i18n="contact.quick.emergency.note">24/7 para clientes</p>
+                    <a href="tel:+34600123456" class="text-error font-headline font-semibold hover:text-error-700 transition-colors duration-300">
+                        +505 88504981
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Availability -->
+    <section class="py-20 bg-primary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Location Info -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-headline font-bold text-primary mb-6" data-i18n="contact.location.title">Ubicación y Disponibilidad</h2>
+                    <p class="text-xl text-text-secondary font-body mb-8" data-i18n="contact.location.desc">Presencia local en Nicaragua con capacidad de servicio global</p>
+
+                    <div class="space-y-6">
+                        <!-- Madrid Office -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-accent-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-primary mb-1" data-i18n="contact.location.office.title">Oficina Principal - Managua</h3>
+                                <p class="text-text-secondary font-body" data-i18n-html="contact.location.office.address">Calle principal, Barrio Waspan sur<br />10000 Managua, Nicaragua</p>
+                                <p class="text-sm text-text-secondary font-body mt-2" data-i18n="contact.location.office.note">Reuniones presenciales disponibles con cita previa</p>
+                            </div>
+                        </div>
+
+                        <!-- Working Hours -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-secondary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-primary mb-1" data-i18n="contact.location.hours.title">Horario de Atención</h3>
+                                <div class="text-text-secondary font-body space-y-1">
+                                    <p data-i18n="contact.location.hours.weekdays">Lunes - Viernes: 9:00 - 18:00 CET</p>
+                                    <p data-i18n="contact.location.hours.saturdays">Sábados: 10:00 - 14:00 CET</p>
+                                    <p data-i18n="contact.location.hours.sundays">Domingos: Solo emergencias</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Global Service -->
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-headline font-semibold text-primary mb-1" data-i18n="contact.location.global.title">Servicio Global</h3>
+                                <p class="text-text-secondary font-body" data-i18n="contact.location.global.desc">Trabajamos con clientes en América Latina. Norteamérica y Europa.</p>
+                                <p class="text-sm text-text-secondary font-body mt-2" data-i18n="contact.location.global.note">Adaptamos horarios según zona horaria del cliente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Placeholder -->
+                <div class="relative">
+                    <div class="aspect-w-16 aspect-h-12 bg-primary-100 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73a0e?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mapa de ubicación de oficinas Zansa Digital en Madrid" class="w-full h-80 object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1252814/pexels-photo-1252814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary-900 bg-opacity-20 flex items-center justify-center">
+                            <div class="text-center text-white">
+                                <svg class="w-12 h-12 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                </svg>
+                                <p class="font-headline font-semibold" data-i18n="contact.location.map_label">Managua, Nicaragua</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Portal Access -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="card-elevated">
+                <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-headline font-bold text-primary mb-4" data-i18n="contact.portal.title">Portal de Clientes</h2>
+                <p class="text-xl text-text-secondary font-body mb-8" data-i18n="contact.portal.desc">Accede a tu área privada para seguimiento de proyectos, documentos y comunicación directa con tu equipo</p>
+                
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-headline font-semibold text-primary mb-2" data-i18n="contact.portal.feature.tracking.title">Seguimiento</h3>
+                        <p class="text-sm text-text-secondary font-body" data-i18n="contact.portal.feature.tracking.desc">Progreso en tiempo real</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-headline font-semibold text-primary mb-2" data-i18n="contact.portal.feature.docs.title">Documentos</h3>
+                        <p class="text-sm text-text-secondary font-body" data-i18n="contact.portal.feature.docs.desc">Acceso a todos los archivos</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-headline font-semibold text-primary mb-2" data-i18n="contact.portal.feature.comm.title">Comunicación</h3>
+                        <p class="text-sm text-text-secondary font-body" data-i18n="contact.portal.feature.comm.desc">Chat directo con equipo</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="javascript:void(0)" class="btn-outline px-8 py-3" data-i18n="contact.portal.request.cta">Solicitar Acceso</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media & Community -->
+    <section class="py-20 bg-primary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-headline font-bold text-primary mb-4" data-i18n="contact.social.title">Síguenos y Conecta</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto font-body" data-i18n="contact.social.desc">Mantente al día con nuestras últimas noticias, casos de éxito y tendencias digitales</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- LinkedIn -->
+                <div class="card text-center hover:scale-105 transition-all duration-300">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline font-semibold text-primary mb-2">LinkedIn</h3>
+                    <p class="text-text-secondary font-body text-sm mb-4" data-i18n="contact.social.linkedin.desc">Insights profesionales y casos de éxito</p>
+                    <a href="javascript:void(0)" class="text-blue-600 font-headline font-semibold hover:text-blue-700 transition-colors duration-300" data-i18n="contact.social.follow">Seguir</a>
+                </div>
+
+                <!-- Twitter -->
+                <div class="card text-center hover:scale-105 transition-all duration-300">
+                    <div class="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-sky-500" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline font-semibold text-primary mb-2">Twitter</h3>
+                    <p class="text-text-secondary font-body text-sm mb-4" data-i18n="contact.social.twitter.desc">Tendencias y noticias del sector</p>
+                    <a href="javascript:void(0)" class="text-sky-500 font-headline font-semibold hover:text-sky-600 transition-colors duration-300" data-i18n="contact.social.follow">Seguir</a>
+                </div>
+
+                <!-- Instagram -->
+                <div class="card text-center hover:scale-105 transition-all duration-300">
+                    <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-pink-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.608h-1.509V5.897h1.509v1.483zm-.133 2.322c.875.807 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297s-2.448-.49-3.323-1.297c-.928-.875-1.418-2.026-1.418-3.244s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline font-semibold text-primary mb-2">Instagram</h3>
+                    <p class="text-text-secondary font-body text-sm mb-4" data-i18n="contact.social.instagram.desc">Behind the scenes y cultura</p>
+                    <a href="javascript:void(0)" class="text-pink-600 font-headline font-semibold hover:text-pink-700 transition-colors duration-300" data-i18n="contact.social.follow">Seguir</a>
+                </div>
+
+                <!-- YouTube 
+                <div class="card text-center hover:scale-105 transition-all duration-300">
+                    <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-red-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-headline font-semibold text-primary mb-2">YouTube</h3>
+                    <p class="text-text-secondary font-body text-sm mb-4">Tutoriales y webinars</p>
+                    <a href="javascript:void(0)" class="text-red-600 font-headline font-semibold hover:text-red-700 transition-colors duration-300">
+                        Suscribirse
+                    </a>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Privacy -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-headline font-bold text-primary mb-4" data-i18n="contact.security.title">Seguridad y Privacidad</h2>
+                <p class="text-xl text-text-secondary font-body" data-i18n="contact.security.desc">Tu información está protegida con los más altos estándares de seguridad</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Security Measures -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-success-100 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-headline font-semibold text-primary" data-i18n="contact.security.measures.title">Medidas de Seguridad</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-text-primary font-body">
+                            <div class="w-2 h-2 bg-success rounded-full mr-3"></div>
+                            <span data-i18n="contact.security.measures.ssl">Cifrado SSL/TLS en todas las comunicaciones</span>
+                        </li>
+                        <li class="flex items-center text-text-primary font-body">
+                            <div class="w-2 h-2 bg-success rounded-full mr-3"></div>
+                            <span data-i18n="contact.security.measures.iso">Servidores seguros con certificación ISO 27001</span>
+                        </li>
+                        <li class="flex items-center text-text-primary font-body">
+                            <div class="w-2 h-2 bg-success rounded-full mr-3"></div>
+                            <span data-i18n="contact.security.measures.backups">Backups automáticos y redundancia de datos</span>
+                        </li>
+                        <li class="flex items-center text-text-primary font-body">
+                            <div class="w-2 h-2 bg-success rounded-full mr-3"></div>
+                            <span data-i18n="contact.security.measures.mfa">Acceso restringido y autenticación multifactor</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Privacy Compliance -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                            <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-headline font-semibold text-primary" data-i18n="contact.security.compliance.title">Cumplimiento Legal</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-text-primary font-body">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            <span data-i18n="contact.security.compliance.gdpr">Cumplimiento total del RGPD (GDPR)</span>
+                        </li>
+                        <li class="flex items-center text-text-primary font-body">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            <span data-i18n="contact.security.compliance.policy">Política de privacidad transparente</span>
+                        </li>
+                        <li class="flex items-center text-text-primary font-body">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            <span data-i18n="contact.security.compliance.rights">Derecho al olvido y portabilidad de datos</span>
+                        </li>
+                        <li class="flex items-center text-text-primary font-body">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            <span data-i18n="contact.security.compliance.nda">Acuerdos de confidencialidad (NDA)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <div class="flex flex-wrap justify-center items-center gap-8 opacity-70">
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-text-secondary text-sm font-body" data-i18n="portfolio.trust.ssl">SSL Seguro</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-text-secondary text-sm font-body" data-i18n="portfolio.trust.gdpr">GDPR Compliant</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span class="text-text-secondary text-sm font-body" data-i18n="portfolio.trust.iso">ISO 27001</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Trust Signals -->
+    <footer class="bg-primary-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <svg class="h-8 w-8 text-accent mr-2" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M16 2L3 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-13-5z"/>
+                            <path d="M16 6L8 9v8c0 3.33 2.31 6.44 5.4 7.2 3.09-.76 5.4-3.87 5.4-7.2V9l-2.8-3z" fill="currentColor" opacity="0.7"/>
+                        </svg>
+                        <span class="font-headline font-bold text-xl">Zansa Digital</span>
+                    </div>
+                    <p class="text-primary-200 font-body mb-6 max-w-md" data-i18n="footer.company_info_text">
+                        Tu socio estratégico en transformación digital. Conectamos creatividad y tecnología para impulsar el crecimiento de tu negocio.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-primary-200 hover:text-accent transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-200 hover:text-accent transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-200 hover:text-accent transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-headline font-semibold text-lg mb-4" data-i18n="footer.services">Servicios</h3>
+                    <ul class="space-y-2 font-body">
+                        <li><a href="services_comprehensive_digital_solutions.html" class="text-primary-200 hover:text-accent transition-colors duration-300" data-i18n="footer.service_marketing">Marketing Digital</a></li>
+                        <li><a href="services_comprehensive_digital_solutions.html" class="text-primary-200 hover:text-accent transition-colors duration-300" data-i18n="footer.service_web">Desarrollo Web</a></li>
+                        <li><a href="services_comprehensive_digital_solutions.html" class="text-primary-200 hover:text-accent transition-colors duration-300" data-i18n="footer.service_ecommerce">E-commerce</a></li>
+                        <li><a href="services_comprehensive_digital_solutions.html" class="text-primary-200 hover:text-accent transition-colors duration-300" data-i18n="footer.service_seo">SEO & SEM</a></li>
+                        <li><a href="services_comprehensive_digital_solutions.html" class="text-primary-200 hover:text-accent transition-colors duration-300" data-i18n="footer.service_consulting">Consultoría Digital</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h3 class="font-headline font-semibold text-lg mb-4" data-i18n="footer.company">Empresa</h3>
+                    <ul class="space-y-2 font-body">
+                        <li><a href="about_team_innovation_lab.html" class="text-primary-200 hover:text-accent transition-colors duration-300" data-i18n="footer.company_about">Sobre Nosotros</a></li>
+                        <li><a href="portfolio_success_stories_case_studies.html" class="text-primary-200 hover:text-accent transition-colors duration-300" data-i18n="footer.company_portfolio">Portafolio</a></li>
+                        <li><a href="about_team_innovation_lab.html" class="text-primary-200 hover:text-accent transition-colors duration-300" data-i18n="footer.company_team">Nuestro Equipo</a></li>
+                        <li><a href="contact_multi_channel_connection_hub.html" class="text-primary-200 hover:text-accent transition-colors duration-300" data-i18n="footer.company_contact">Contacto</a></li>
+                        <li><a href="free_consultation_assessment_booking.html" class="text-primary-200 hover:text-accent transition-colors duration-300" data-i18n="footer.company_free">Consultoría Gratuita</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Trust Signals & Certifications -->
+            <div class="border-t border-primary-700 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="flex flex-wrap items-center gap-6 mb-4 md:mb-0">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-primary-200 text-sm font-body">SSL Seguro</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-primary-200 text-sm font-body">GDPR Compliant</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span class="text-primary-200 text-sm font-body">ISO 27001</span>
+                        </div>
+                    </div>
+                    <div class="text-primary-200 text-sm font-body" data-i18n="portfolio.copyright">© 2025 Zansa Digital. Todos los derechos reservados.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Elements -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+    // Removed duplicate UI-only submit handler; backend handler below handles submission and messages
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation classes when elements come into view
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animation-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.card, .card-elevated, section').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form validation enhancements
+        const inputs = document.querySelectorAll('input[required], textarea[required], select[required]');
+        
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.value.trim() === '') {
+                    this.classList.add('border-error-500');
+                    this.classList.remove('border-success-500');
+                } else {
+                    this.classList.add('border-success-500');
+                    this.classList.remove('border-error-500');
+                }
+            });
+        });
+
+        // Email validation
+        const emailInput = document.getElementById('email');
+        if (emailInput) {
+            emailInput.addEventListener('blur', function() {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (this.value && !emailRegex.test(this.value)) {
+                    this.classList.add('border-error-500');
+                    this.classList.remove('border-success-500');
+                } else if (this.value) {
+                    this.classList.add('border-success-500');
+                    this.classList.remove('border-error-500');
+                }
+            });
+        }
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+<script>
+// Script para enviar el formulario al backend Express y guardar en MongoDB Atlas
+document.getElementById('main-contact-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+    const form = e.target;
+    // map form fields to the backend's expected names
+    const data = {
+        name: form.name.value,
+        company: form.company.value,
+        email: form.email.value,
+        phone: form.phone.value,
+        project_type: form['project-type'].value,
+        budget: form.budget.value,
+        timeline: form.timeline.value,
+        description: form.description.value,
+        current_situation: form['current-situation'].value,
+        comm_prefs: Array.from(form.querySelectorAll('input[name="communication[]"]:checked')).map(cb => cb.value),
+        privacyTerms: form['privacy-terms'].checked
+    };
+
+    const API_BASE = window.CONTACT_API_BASE || 'http://localhost:4000';
+    try {
+        const response = await fetch(`${API_BASE}/api/contact`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+
+    const result = await response.json();
+    if (response.ok) {
+            alert(i18next.t('contact.alert.success'));
+      form.reset();
+    } else {
+            alert(i18next.t('contact.alert.error_prefix') + ' ' + (result.error || ''));
+    }
+  } catch (err) {
+        alert(i18next.t('contact.alert.network_prefix') + ' ' + err.message);
+  }
+});
+</script>
+</body>
+</html>
